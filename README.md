@@ -21,6 +21,7 @@ The `MockWebServer` in package `th.mfu` serves the web server in our system. It 
 5. Study the code in `main()` and tell me What it does?
 ```
  write your through here.
+ The main() method starts two mock web servers on ports 8080 and 8081 using separate threads. It then waits for the user to press any key to stop the servers.
 ```
 6. Run the `main()`, point the web browser to `http://localhost:8080` and `http://localhost:8081`
 It should shows a simple HTML with the word such as  `Hello, Web! on Port 8080`.
@@ -53,6 +54,18 @@ Think about the following,  modify the code to experiment it and put your though
 
 ```
   Your thought here...
+  new MockWebServer(9090).
+
+  Create more thread instances
+
+  String response = "HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n"
+    + "<html><body>"
+    + "<h1>Welcome</h1>"
+    + "<table><tr><td>Data</td></tr></table>"
+    + "<img src='https://example.com/image.jpg' alt='Example'/>"
+    + "</body></html>";
+
+  Testing multiple services or versions
 ```
 **Please push the code back to Github to submit this lab**
 After you push, ensure you have green checkmark on the repository.
